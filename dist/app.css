@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap);* {
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,6 +16,10 @@ header .top {
   background-color: #FFE7D2;
 }
 
+header .top p {
+  font-size: 15px;
+}
+
 header .bottom {
   height: 90px;
   width: 65%;
@@ -26,24 +30,54 @@ header .bottom {
   align-items: center;
 }
 
-header .bottom img {
+header .bottom .logo {
   height: 35%;
 }
 
-header .bottom ul {
-  list-style: none;
-  width: 100%;
+header .bottom nav {
   display: flex;
 }
 
-header .bottom ul li {
+header .bottom nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header .bottom nav ul li {
   margin: 0 30px;
 }
 
-header .bottom ul li a {
+header .bottom nav ul li a {
   text-decoration: none;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   color: #58402c;
+}
+
+header .bottom nav ul li .chevron_down {
+  vertical-align: bottom;
+}
+
+header .bottom nav .btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #30488f;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+header .bottom nav .btn img {
+  width: 18px;
+}
+
+header .bottom nav .btn span {
+  color: #30488f;
+  font-weight: 500;
+  padding-left: 10px;
+  white-space: nowrap;
 }
 

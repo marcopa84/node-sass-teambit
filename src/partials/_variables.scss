@@ -4,11 +4,13 @@ $headre_top_height: 50px;
 $headre_bottom_height: 90px;
 
 $orange_background: #FFE7D2;
+$brown_text: #58402c;
 
 @mixin ul_rules{
   list-style: none;
   width: 100%;
   display: flex;
+  align-items: center;
 };
 @mixin a_styled{
   text-decoration: none;
