@@ -1,0 +1,16 @@
+$container_width: 65%;
+
+$headre_top_height: 50px;
+$headre_bottom_height: 90px;
+
+$orange_background: #FFE7D2;
+
+@mixin ul_rules{
+  list-style: none;
+  width: 100%;
+  display: flex;
+};
+@mixin a_styled{
+  text-decoration: none;
+  font-size: 15px;
+}

@@ -1,0 +1,35 @@
+header{
+  .top{
+    height: $headre_top_height;
+    line-height: $headre_top_height;
+    vertical-align: middle;
+    text-align: center;
+    background-color: $orange_background;
+  }
+  .bottom{
+    height: $headre_bottom_height;
+    width: $container_width;
+    // background-color: red; // DEBUG:
+    margin: auto;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      height: 35%;
+    }
+    ul{
+      @include ul_rules;
+      li{
+        margin: 0 30px;
+        // background-color: lime; // DEBUG:
+        a{
+          @include a_styled;
+          font-weight: 700;
+          color: #58402c;
+        }
+
+      }
+    }
+  }
+}
