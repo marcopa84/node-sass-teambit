@@ -11,8 +11,7 @@ header{
   }
   .bottom{
     height: $headre_bottom_height;
-    width: $container_width;
-    margin: auto;
+    @include container_width;
     border-bottom: 1px solid grey;
     display: flex;
     justify-content: space-between;

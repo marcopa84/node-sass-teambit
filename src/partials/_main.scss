@@ -1,0 +1,17 @@
+main{
+  .jumbotron{
+    @include container_width;
+    @include large_padding;
+    background-color: red; // DEBUG:
+    display: flex;
+    .left{
+      width: 50%;
+    }
+    .right{
+      width: 50%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

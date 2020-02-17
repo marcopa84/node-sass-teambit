@@ -81,3 +81,24 @@ header .bottom nav .btn span {
   white-space: nowrap;
 }
 
+main .jumbotron {
+  width: 65%;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: red;
+  display: flex;
+}
+
+main .jumbotron .left {
+  width: 50%;
+}
+
+main .jumbotron .right {
+  width: 50%;
+}
+
+main .jumbotron .right img {
+  width: 100%;
+}
+
