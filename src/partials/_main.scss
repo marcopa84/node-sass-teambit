@@ -2,10 +2,36 @@ main{
   .jumbotron{
     @include container_width;
     @include large_padding;
-    background-color: red; // DEBUG:
+    color: $brown_text;
     display: flex;
     .left{
       width: 50%;
+      h1{
+        font-size: $h1;
+        padding-right: 50px;
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: $p;
+        line-height: $p*2;
+      }
+      form{
+        padding-top: 50px;
+        a{
+          color: #fff;
+          background-color: $blue_hover;
+          padding: 10px 20px;
+          border: 1px solid $blue_hover;
+          border-radius: 5px;
+          @include a_styled;
+        }
+        label{
+          display:inline-block;
+          text-align: center;
+          width: 39px;
+          height: 39px;
+        }
+      }
     }
     .right{
       width: 50%;
@@ -13,5 +39,9 @@ main{
         width: 100%;
       }
     }
+  }
+  .first_section{
+    height: 200px; // DEBUG:
+    background-color: $orange_background;
   }
 }

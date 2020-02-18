@@ -4,7 +4,17 @@ $headre_top_height: 50px;
 $headre_bottom_height: 90px;
 
 $orange_background: #FFE7D2;
-$brown_text: #58402c;
+$brown_text: rgb(88, 64, 44);
+$blue_hover:rgb(48, 72, 143);
+
+// typografy
+$h1:50px;
+$p:22px;
+
+
+//mediaquery
+$breackpointSmall: 767px;
+
 
 @mixin container_width{
   width: $container_width;
@@ -17,7 +27,6 @@ $brown_text: #58402c;
 @mixin ul_rules{
   list-style: none;
   width: 100%;
-  display: flex;
   align-items: center;
 };
 

@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap);* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "HarmoniaSansProCyrSemiBd", sans-serif;
 }
 
 header .top {
@@ -24,7 +24,7 @@ header .bottom {
   height: 90px;
   width: 65%;
   margin: auto;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #58402c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,9 +39,9 @@ header .bottom nav {
 }
 
 header .bottom nav ul {
+  display: none;
   list-style: none;
   width: 100%;
-  display: flex;
   align-items: center;
 }
 
@@ -52,7 +52,7 @@ header .bottom nav ul li {
 header .bottom nav ul li a {
   text-decoration: none;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: bold;
   color: #58402c;
 }
 
@@ -70,15 +70,33 @@ header .bottom nav .btn {
   font-size: 15px;
 }
 
-header .bottom nav .btn img {
-  width: 18px;
-}
-
 header .bottom nav .btn span {
   color: #30488f;
-  font-weight: 500;
+  font-weight: bold;
   padding-left: 10px;
   white-space: nowrap;
+}
+
+header .bottom nav .btn:hover {
+  background-color: #30488f;
+}
+
+header .bottom nav .btn:hover span {
+  color: white;
+}
+
+header .bottom nav .btn:hover svg .logo-colors {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  header i.fa-bars {
+    display: none;
+  }
+
+  header .menu_header {
+    display: flex;
+  }
 }
 
 main .jumbotron {
@@ -86,12 +104,44 @@ main .jumbotron {
   margin: auto;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: red;
+  color: #58402c;
   display: flex;
 }
 
 main .jumbotron .left {
   width: 50%;
+}
+
+main .jumbotron .left h1 {
+  font-size: 50px;
+  padding-right: 50px;
+  margin-bottom: 30px;
+}
+
+main .jumbotron .left p {
+  font-size: 22px;
+  line-height: 44px;
+}
+
+main .jumbotron .left form {
+  padding-top: 50px;
+}
+
+main .jumbotron .left form a {
+  color: #fff;
+  background-color: #30488f;
+  padding: 10px 20px;
+  border: 1px solid #30488f;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+main .jumbotron .left form label {
+  display: inline-block;
+  text-align: center;
+  width: 39px;
+  height: 39px;
 }
 
 main .jumbotron .right {
@@ -100,5 +150,10 @@ main .jumbotron .right {
 
 main .jumbotron .right img {
   width: 100%;
+}
+
+main .first_section {
+  height: 200px;
+  background-color: #FFE7D2;
 }
 

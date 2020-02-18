@@ -12,7 +12,7 @@ header{
   .bottom{
     height: $headre_bottom_height;
     @include container_width;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid $brown_text;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,12 +22,13 @@ header{
     nav{
       display: flex;
       ul{
+        display: none;
         @include ul_rules;
         li{
           margin: 0 30px;
           a{
             @include a_styled;
-            font-weight: 500;
+            font-weight: bold;
             color: $brown_text;
           }
           .chevron_down{
@@ -39,19 +40,33 @@ header{
         display: flex;
         justify-content: space-between;
         padding: 10px;
-        border: 1px solid rgb(48, 72, 143);
+        border: 1px solid $blue_hover;
         border-radius: 5px;
         @include a_styled;
-        img{
-          width: 18px;
-        }
         span{
-          color: rgb(48, 72, 143);
-          font-weight: 500;
+          color: $blue_hover;
+          font-weight: bold;
           padding-left: 10px;
           white-space: nowrap;
         }
       }
+      .btn:hover{
+        background-color: $blue_hover;
+        span{
+          color: white;
+        }
+        svg .logo-colors{
+          display: none;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: $breackpointSmall) {
+    i.fa-bars {
+      display: none;
+    }
+    .menu_header {
+      display: flex;
     }
   }
 }
