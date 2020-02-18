@@ -4,8 +4,14 @@ main{
     @include large_padding;
     color: $brown_text;
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $breackpointSmall) {
+      & {
+        flex-direction: row;
+      }
+    }
     .left{
-      width: 50%;
+      width: 100%;
       h1{
         font-size: $h1;
         padding-right: 50px;
@@ -32,11 +38,22 @@ main{
           height: 39px;
         }
       }
+      @media screen and (min-width: $breackpointSmall) {
+        & {
+          width: 50%;
+        }
+      }
     }
     .right{
-      width: 50%;
+      width: 100%;
+
       img{
         width: 100%;
+      }
+      @media screen and (min-width: $breackpointSmall) {
+        & {
+          width: 50%;
+        }
       }
     }
   }

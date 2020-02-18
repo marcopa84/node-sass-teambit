@@ -9,6 +9,7 @@ body {
 }
 
 header .top {
+  display: none;
   height: 50px;
   line-height: 50px;
   vertical-align: middle;
@@ -20,9 +21,15 @@ header .top p {
   font-size: 15px;
 }
 
+@media screen and (min-width: 767px) {
+  header .top {
+    display: block;
+  }
+}
+
 header .bottom {
   height: 90px;
-  width: 65%;
+  width: 85%;
   margin: auto;
   border-bottom: 1px solid #58402c;
   display: flex;
@@ -38,11 +45,23 @@ header .bottom nav {
   display: flex;
 }
 
+@media screen and (min-width: 767px) {
+  header .bottom nav i.fa-bars {
+    display: none;
+  }
+}
+
 header .bottom nav ul {
   display: none;
   list-style: none;
   width: 100%;
   align-items: center;
+}
+
+@media screen and (min-width: 767px) {
+  header .bottom nav ul {
+    display: flex;
+  }
 }
 
 header .bottom nav ul li {
@@ -89,27 +108,24 @@ header .bottom nav .btn:hover svg .logo-colors {
   display: none;
 }
 
-@media screen and (min-width: 767px) {
-  header i.fa-bars {
-    display: none;
-  }
-
-  header .menu_header {
-    display: flex;
-  }
-}
-
 main .jumbotron {
-  width: 65%;
+  width: 85%;
   margin: auto;
   padding-top: 100px;
   padding-bottom: 100px;
   color: #58402c;
   display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 767px) {
+  main .jumbotron {
+    flex-direction: row;
+  }
 }
 
 main .jumbotron .left {
-  width: 50%;
+  width: 100%;
 }
 
 main .jumbotron .left h1 {
@@ -144,12 +160,24 @@ main .jumbotron .left form label {
   height: 39px;
 }
 
+@media screen and (min-width: 767px) {
+  main .jumbotron .left {
+    width: 50%;
+  }
+}
+
 main .jumbotron .right {
-  width: 50%;
+  width: 100%;
 }
 
 main .jumbotron .right img {
   width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+  main .jumbotron .right {
+    width: 50%;
+  }
 }
 
 main .first_section {

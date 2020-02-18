@@ -1,5 +1,6 @@
 header{
   .top{
+    display: none;
     height: $headre_top_height;
     line-height: $headre_top_height;
     vertical-align: middle;
@@ -7,6 +8,11 @@ header{
     background-color: $orange_background;
     p{
       font-size: 15px;
+    }
+    @media screen and (min-width: $breackpointSmall) {
+      & {
+        display: block;
+      }
     }
   }
   .bottom{
@@ -21,8 +27,18 @@ header{
     }
     nav{
       display: flex;
+      @media screen and (min-width: $breackpointSmall) {
+        i.fa-bars {
+          display: none;
+        }
+      }
       ul{
         display: none;
+        @media screen and (min-width: $breackpointSmall) {
+          & {
+            display: flex;
+          }
+        }
         @include ul_rules;
         li{
           margin: 0 30px;
@@ -61,12 +77,5 @@ header{
       }
     }
   }
-  @media screen and (min-width: $breackpointSmall) {
-    i.fa-bars {
-      display: none;
-    }
-    .menu_header {
-      display: flex;
-    }
-  }
+
 }
